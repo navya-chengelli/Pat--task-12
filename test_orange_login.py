@@ -63,7 +63,7 @@ def test_orange_login(browser, username, password):
         WebDriverWait(browser, 30).until(EC.element_to_be_clickable(login_page.password_input))
 
         login_page.enter_password(password)
-        login_page.continue_password()
+        # login_page.continue_password()
         login_page.click_login_button()
 
         # Wait for login success (customize as per your application)
